@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panaderia rico pan</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Dancing+Script|Muli:400,700&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+</head>
+<body>
+    <section class="portada">
+        <div class="mascara">
+            <header class="header">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="">Inicio</a></li>
+                        <li><a href="">Catálogo</a></li>
+                        <li><a href=""><img src="img/pan-logo.png" alt="" height="120"></a></li>
+                        <li><a href="">Historia</a></li>
+                        <li><a href="">Ubicación</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="title">
+                <p>El sabor tradicional del rico pan a la puerta de tu casa.</p>
+                <a href="#">Ver más</a>
+            </section>
+        </div>
+    </section>
+    <section class="history">
+        <div class="container">
+            <div class="about">
+                <div class="left">
+                    <h2>Elaboramos panes artesanales</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ut in nostrum rem nesciunt culpa voluptatem quae aspernatur deserunt minima. Atque suscipit natus aliquid perspiciatis, esse accusamus praesentium saepe dignissimos!Lorem
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, unde quibusdam impedit necessitatibus, eveniet eius blanditiis voluptatem repudiandae fugit quia voluptate ullam laborum corporis praesentium cum numquam quos explicabo quas.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda voluptatibus perspiciatis deleniti molestias alias quidem quas sapiente obcaecati, voluptas maxime commodi id repudiandae, odit dolore iure dignissimos. Perspiciatis, quas distinctio.
+                    </p>
+                </div>
+                <div class="right">
+                    <img src="img/rodillo-pan.jpg" width ="550" alt="">
+                </div>
+            </div>
+           
+        </div>
+        
+        
+    </section>
+    <section >
+        <div class="types">
+            <div class="bxslider">
+                <div><img src="img/pan-1.png" title="Pain Au Chocolat"></div>
+                <div><img src="img/pan-2.png" title="Cuernito"></div>
+                <div><img src="img/pan-3.png" title="Trenza"></div>
+              </div>
+        </div>
+        
+    </section>
+    <script>
+       $('.bxslider').bxSlider({
+        auto: true,
+        autoControls: false,
+        stopAutoOnClick: true,
+        pager: false,
+        slideWidth: 500,
+        captions: true
+        });
+      </script>
+</body>
+</html>
