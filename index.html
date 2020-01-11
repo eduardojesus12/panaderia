@@ -6,8 +6,9 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Courgette|Dancing+Script|Muli:400,700&display=swap" rel="stylesheet">
     <script src="js/jquery-3.4.1.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> -->
+    <script src="js/jquery.cycle.all.min.js"></script>
 </head>
 <body>
     <section class="portada">
@@ -15,16 +16,16 @@
             <header class="header">
                 <nav class="menu">
                     <ul>
-                        <li><a href="">Inicio</a></li>
+                        <li><a href="" class="active">Inicio</a></li>
                         <li><a href="">Catálogo</a></li>
-                        <li><a href=""><img src="img/pan-logo.png" alt="" height="120"></a></li>
+                        <li><a href="" class="no-border"><img src="img/pan-logo.png" alt="" height="120"></a></li>
                         <li><a href="">Historia</a></li>
                         <li><a href="">Ubicación</a></li>
                     </ul>
                 </nav>
             </header>
             <section class="title">
-                <p>El sabor tradicional del rico pan a la puerta de tu casa.</p>
+                <h1>El sabor tradicional del rico pan a la puerta de tu casa.</h1>
                 <a href="#">Ver más</a>
             </section>
         </div>
@@ -33,15 +34,14 @@
         <div class="container">
             <div class="about">
                 <div class="left">
-                    <h2>Elaboramos panes artesanales</h2>
+                    <h2>Elaboramos panes 100% artesanales</h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ut in nostrum rem nesciunt culpa voluptatem quae aspernatur deserunt minima. Atque suscipit natus aliquid perspiciatis, esse accusamus praesentium saepe dignissimos!Lorem
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, unde quibusdam impedit necessitatibus, eveniet eius blanditiis voluptatem repudiandae fugit quia voluptate ullam laborum corporis praesentium cum numquam quos explicabo quas.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda voluptatibus perspiciatis deleniti molestias alias quidem quas sapiente obcaecati, voluptas maxime commodi id repudiandae, odit dolore iure dignissimos. Perspiciatis, quas distinctio.
+                        Nuestros panes son los preferidos por su sabor, panes 100% artesanales de distintas variedades.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti fuga dolores ducimus amet sapiente quod doloribus iusto molestias soluta, expedita debitis dolor vero minus nostrum veniam, necessitatibus fugiat optio provident?
                     </p>
                 </div>
                 <div class="right">
-                    <img src="img/rodillo-pan.jpg" width ="550" alt="">
+                    <img src="img/panes.png" alt="">
                 </div>
             </div>
            
@@ -49,25 +49,87 @@
         
         
     </section>
-    <section >
+    <section class="most-sales">
         <div class="types">
-            <div class="bxslider">
-                <div><img src="img/pan-1.png" title="Pain Au Chocolat"></div>
-                <div><img src="img/pan-2.png" title="Cuernito"></div>
-                <div><img src="img/pan-3.png" title="Trenza"></div>
-              </div>
+            <h2>Panes mas vendidos</h2>
+                <div id="billboard"><!--Container for slideshow elements-->
+                    <!-- <h1>Pan de muerto</h1> -->
+                    <ul class="slideshow">
+                        <li><img src="img/pan-1.png" alt="Baffling, isn't it?" /></li>
+                        <li><img src="img/pan-2.png" alt="What's the metric system?"></li>
+                        <li><img src="img/pan-3.png" alt="What's the metric system?"></li>
+                    </ul>
+        
+                </div>
         </div>
         
     </section>
-    <script>
-       $('.bxslider').bxSlider({
-        auto: true,
-        autoControls: false,
-        stopAutoOnClick: true,
-        pager: false,
-        slideWidth: 500,
-        captions: true
-        });
-      </script>
+    <section class="delivery">
+        <h2>Llegamos hasta la puerta de tu casa</h2>
+        <div class="camion">
+            <div class="camion-left">
+                <img src="img/camion.png" alt="">
+            </div>
+            <div class="camion-right">
+                <p>
+                    Contamos con rutas de distribución de villahermosa y sus alrededores.
+                    Repartimos nuestro rico pan de lunes a sabado de 3 p.m. a 9 p.m.
+                </p>
+                <br/>
+                <p>
+                    Hacemos pasteles y postres por pedido, solocita una cotizacion para tu evento.
+                </p>
+                <br>
+                <p>Hacemos entregas a Macultepec, Ocuilzapotlan, Las Rosas, Km. 15, Km. 10,
+                    Atasta, Indeco, Lagunas, Tamulte, Guadalupe Borja, 1ra de Mayo, Mayito,
+                    Centro, Tabasco 2000, Las brisas, Blancas Mariposas, Gaviotas, 
+                </p>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="footer container">
+            <div class="footer-left">
+                <figure>
+                    <img src="img/pan-logo.png" alt="" height="150">
+                    <p>Copyright ©</p>     
+                    <p>Panaderia rico pan</p>     
+                    <p>Todos los derechos reservados</p>     
+                </figure>
+            </div>
+            <div class="footer-contact">
+                <h4>Dirección:</h4>
+                <a>
+                        <i class="fas fa-mobile-alt fa-2x"></i>
+                        Carretera villahermosa-frontera, Km. 2,<br/> Villahermosa tabasco
+                </a>
+            </div>
+            <div class="redes">
+                <h4>Redes</h4>
+                    <figure>
+                        <a href="">
+                            <img src="img/facebook.png" alt=""> 
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="">
+                            <img src="img/instagram.png" alt="">
+                        </a>
+                    </figure>
+                </div>  
+        </div>
+    </footer>
+    <script type="text/javascript">
+		$(document).ready(function(){
+
+			$('.slideshow').cycle({
+				fx: 'scrollRight',
+				speed: 1000,
+				timeout: 3000
+			});
+
+		});
+	</script>
 </body>
 </html>
