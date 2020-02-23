@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panaderia rico pan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/styles.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Dancing+Script|Muli:400,700&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="css/justifiedGallery.min.css" />
+    <script src="js/jquery.justifiedGallery.min.js"></script>
+    <link rel="stylesheet" href="css/lightbox.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script src="js/scrolla.jquery.min.js"></script>
+    <script src="js/blazy.min.js"></script>
+</head>
+<body>
+    <section class="background-historia">
+            <header class="header">
+                <i class="fas fa-bars" id="burger-button"></i>
+                <nav class="menu" id="menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="productos.html">Productos</a>
+                        </li>
+                        <li class="logo-imagen">
+                            <a href="index.html" class="no-border"><img src="images/pan-logo.png" alt="" height="120"></a>
+                        </li>
+                        <li>
+                            <a href="#">Historia</a>
+                        </li>
+                        <li>
+                            <a href="ubicacion.html">Ubicación</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        <section class="historias container">
+            <div class="historia">
+                <div class="imagenes-left">
+                    <img src="images/marco-historia.png" class="marco" alt="">
+                    <a href="images/historia-1.jpg" data-lightbox="historia-1">
+                        <img class="b-lazy foto" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="images/historia-1.jpg">
+                    </a>
+                </div>
+                <div class="historia-texto-derecha animate" data-animate="bounceInRight" data-duration="2s" data-iteration="1">
+                    <h1 class="historia-titulo">Nuestra historia comienza aquí</h1>
+                    <p>En 1949 el señor Pedro Ramon, quien estaba casado con la señora, Juana Perez y tenian 2 hijos
+                        deciden empezar un negocio de panaderia en su hogar.
+                        Juntos empezaron a vender panes a familiares y amigos, los cuales empezaron a ser reconocidos.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda perspiciatis similique, veniam.
+                    </p>
+                </div>
+            </div>
+            <div class="clearfix">
+                <div class="espacio"></div>
+            </div>
+            <div class="historia">
+                <div class="imagenes-right">
+                    <img src="images/marco-historia.png" class="marco" alt="">
+                        <a href="images/historia-2.jpg" data-lightbox="historia-2">
+                            <img class="b-lazy foto" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="images/historia-2.jpg" alt="" >
+                        </a>
+                </div>
+                <div class="historia-texto-izquierda animate" data-animate="bounceInLeft" data-duration="2s" data-iteration="1" data-delay="0.5s">
+                    <h2 class="historia-titulo">Nuestro sabor nos destaca</h2>
+                    <p>Varios años despues la panaderia ya era conocida en todo el pueblo, pues el pan tenia un sabor rico y fresco,
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore alias eligendi, aliquid accusantium deserunt facere architecto, tempore nesciunt earum ipsum harum eius. Esse similique dolores qui, eius velit commodi deleniti!
+                    </p>
+                </div>
+            </div>
+            <div class="clearfix">
+                <div class="espacio"></div>
+            </div>
+            <div class="historia">
+                <div class="imagenes-left">
+                    <img src="images/marco-historia.png" class="marco" alt="">
+                    <a href="images/historia-3.jpg" data-lightbox="historia-3">
+                        <img class="b-lazy foto" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="images/historia-3.jpg" alt="" >
+                    </a>
+                </div>
+                <div class="historia-texto-derecha animate" data-animate="bounceInRight" data-duration="2s" data-iteration="1" data-delay="0.5s">
+                    <h2 class="historia-titulo">Nuestros clientes nos respaldan</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda perspiciatis similique, veniam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fugit obcaecati iure impedit! Error, excepturi veritatis! Amet tempore reiciendis repudiandae doloribus! Aliquid animi culpa expedita. Voluptates rem cum voluptas quos?
+                    </p>
+                </div>
+            </div>
+            <div class="clearfix">
+                
+            </div>
+            <div class="galeria">
+                <h2>Galeria de fotos</h2>
+                <div id="mygallery" >
+                    <a href="images/galeria-1.jpeg" data-lightbox="bakery">
+                        <img class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Title 1" data-src="images/galeria-1.jpeg" />
+                    </a>
+                    <a href="images/galeria-2.jpg" data-lightbox="bakery">
+                        <img class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Title 2" data-src="images/galeria-2.jpg"/>
+                    </a>
+                    <a href="images/galeria-3.jpg" data-lightbox="bakery">
+                        <img class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Title 3" data-src="images/galeria-3.jpg"/>
+                    </a>
+                    <a href="images/galeria-4.jpeg" data-lightbox="bakery">
+                        <img class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Title 4" data-src="images/galeria-4.jpeg"/>
+                    </a>
+                    <a href="images/galeria-5.jpg" data-lightbox="bakery">
+                        <img class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Title 5" data-src="images/galeria-5.jpg"/>
+                    </a>
+                    <a href="images/galeria-6.jpg" data-lightbox="bakery">
+                        <img class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Title 6" data-src="images/galeria-6.jpg"/>
+                    </a>
+                    <a href="images/galeria-7.jpg" data-lightbox="bakery">
+                        <img class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Title 7" data-src="images/galeria-7.jpg"/>
+                    </a>
+                    <a href="images/galeria-8.jpg" data-lightbox="bakery">
+                        <img class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Title 2" data-src="images/galeria-8.jpg"/>
+                    </a>
+                    <!-- other images... -->
+                </div>
+            </div>
+            </div>
+        </section>
+    </section>
+    <footer>
+        <div class="footer container">
+            <div class="footer-left">
+                <figure>
+                    <img class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="images/pan-logo.png" alt="">
+                    <p>Copyright © <br>
+                        Panaderia rico pan <br>
+                        Todos los derechos reservados
+                    </p>     
+                </figure>
+            </div>
+            <div class="footer-contact">
+                <h4>Dirección</h4>
+                <p>
+                    Carretera villahermosa-frontera, Km. 2, Villahermosa tabasco.
+                </p>
+            </div>
+            <div class="redes">
+                <h4>Redes</h4>
+                <div class="logo-redes">
+                    <figure>
+                        <a href="">
+                            <img class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="images/facebook.png" alt=""> 
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="">
+                            <img class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="images/instagram.png" alt="">
+                        </a>
+                    </figure>
+                </div>
+            </div>  
+        </div>
+    </footer>
+    <script src="js/lightbox.min.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function(){
+
+			$("#mygallery").justifiedGallery({
+                rowHeight: 200,
+                margins: 5,
+                lastRow: 'justify'
+            });
+
+            var consulta = window.matchMedia('(max-width: 500px)');
+            consulta.addListener(mediaQuery);
+
+            var $burgerButton = document.getElementById('burger-button');
+            var $menu =document.getElementById('menu');
+
+            function toggleMenu () {
+                $menu.classList.toggle('active');
+            }
+            function showMenu () {
+                $menu.classList.add('active');
+            }
+            function hideMenu () {
+                $menu.classList.remove('active');
+            }
+
+            function mediaQuery () {
+                if (consulta.matches) {
+                    console.log("Se cumplio la condicion");
+                $burgerButton.addEventListener('touchstart', toggleMenu );
+                } else {
+                $burgerButton.removeEventListener('touchstart', toggleMenu );
+                }
+            }
+            mediaQuery();
+
+            $('.animate').scrolla({
+                mobile: false, // disable animation on mobiles 
+                once: true // only once animation play on scroll
+            });
+
+		});
+    </script>
+    <script>
+        ;(function() {
+            // Initialize
+            var bLazy = new Blazy( {
+                offset: 1
+            });
+        })();
+    </script>
+</body>
+</html>

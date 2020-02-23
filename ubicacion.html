@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panaderia rico pan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/styles.min.css.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Dancing+Script|Muli:400,700&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script src="js/scrolla.jquery.min.js"></script>
+    <script src="js/blazy.min.js"></script>
+
+</head>
+<body>
+    <section >
+            <header class="header">
+                <i class="fas fa-bars" id="burger-button"></i>
+                <nav class="menu" id="menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="productos.html">Productos</a>
+                        </li>
+                        <li class="logo-imagen">
+                            <a href="index.html" class="no-border"><img src="images/pan-logo.png" alt="" height="120"></a>
+                        </li>
+                        <li>
+                            <a href="historia.html">Historia</a>
+                        </li>
+                        <li>
+                            <a href="#">Ubicación</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+    </section>
+    <section class="ubicacion">
+        <div class="contact">
+            <div class="contact-left">
+                <img src="images/panaderia-fachada.jpg" alt="">
+            </div>
+            <div class="contact-right animate" data-animate="bounceInRight" data-duration="2.0s" data-iteration="1">
+                <h1>Contáctanos</h1>
+                <p>Tienes algun evento importante del cual quieres que formemos parte.
+                    Comunicate con nosotros para agendarlo, contamos con postres personalizados, tematicas.
+                </p>
+                <br>
+                <p>Manejamos paquetes y precios por cantidad.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, ullam id! Eaque aliquid ea reprehenderit, placeat minima ut obcaecati molestiae deleniti labore, dignissimos quod ducimus veritatis quaerat quam vitae praesentium.
+                </p>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </section>
+    <section class="datos-contacto">
+            <div class="mapa">
+                <h3 class="title text-brown text-center animate" data-animate="bounceInLeft" data-duration="0.7s" data-delay="0.5s" data-iteration="1">Visítanos</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1915.835288513569!2d-105.36779232524333!3d25.95206728770974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1580604743431!5m2!1ses-419!2smx" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                <p>Carretera villahermosa-frontera, Km. 2,
+                    Villahermosa, Tabasco.
+                </p>
+            </div>
+                <form class="formulario">
+                    <h3 class="title text-brown text-center animate" data-animate="bounceInRight" data-duration="0.7s" data-delay="0.5s" data-iteration="1">Escríbenos</h3>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required/>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" id="telefono" name="telefono" required/>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email"/>
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" name="asunto" />
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" rows="7" cols="30"></textarea>
+                    <input class="button" type="submit" value="Enviar" />
+                </form>
+    </section>
+    <footer>
+        <div class="footer container">
+            <div class="footer-left">
+                <figure>
+                    <img  class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="images/pan-logo.png" alt="">
+                    <p>Copyright © <br>
+                        Panaderia rico pan <br>
+                        Todos los derechos reservados
+                    </p>     
+                </figure>
+            </div>
+            <div class="footer-contact">
+                <h4>Dirección</h4>
+                <p>
+                    Carretera villahermosa-frontera, Km. 2, Villahermosa tabasco.
+                </p>
+            </div>
+            <div class="redes">
+                <h4>Redes</h4>
+                <div class="logo-redes">
+                    <figure>
+                        <a href="">
+                            <img  class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="images/facebook.png" alt=""> 
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="">
+                            <img  class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="images/instagram.png" alt="">
+                        </a>
+                    </figure>
+                </div>
+            </div>  
+        </div>
+    </footer>
+    <script type="text/javascript">
+		$(document).ready(function(){
+
+            var consulta = window.matchMedia('(max-width: 500px)');
+            consulta.addListener(mediaQuery);
+
+            var $burgerButton = document.getElementById('burger-button');
+            var $menu =document.getElementById('menu');
+
+            function toggleMenu () {
+                $menu.classList.toggle('active');
+            }
+            function showMenu () {
+                $menu.classList.add('active');
+            }
+            function hideMenu () {
+                $menu.classList.remove('active');
+            }
+
+            function mediaQuery () {
+                if (consulta.matches) {
+                    console.log("Se cumplio la condicion");
+                $burgerButton.addEventListener('touchstart', toggleMenu );
+                } else {
+                $burgerButton.removeEventListener('touchstart', toggleMenu );
+                }
+            }
+            mediaQuery();
+
+            $('.animate').scrolla({
+                mobile: false, // disable animation on mobiles 
+                once: true // only once animation play on scroll
+            });
+		});
+    </script>
+    <script>
+        ;(function() {
+            // Initialize
+            var bLazy = new Blazy();
+        })();
+    </script>
+</body>
+</html>
